@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AIA - Blockchain</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper internal-wrapper">
+			<div class="header">
+				<img src="img/logo.png" class="logo"/>
+				<p class="title">AIA BLOCKCHAIN CHALLENGE</p>
+			</div>
+			
+			<div class="main">
+				 <h1 style="margin-bottom:1em;">AIA Internal System</h1>
+
+				 <ul class="nav nav-tabs" id="myTab">
+				  <li class="active"><a data-target="#Policy" data-toggle="tab">Policy Storing System</a></li>
+				  <li><a data-target="#Beneficiary" data-toggle="tab">Change of Beneficiary Requests</a></li>
+				  <li><a data-target="#Payment" data-toggle="tab">Payment Record Input</a></li>
+				  <li><a data-target="#Claim" data-toggle="tab">Claim Process</a></li>
+				</ul>
+
+				<div class="tab-content">
+			  		<div class="tab-pane active" id="Policy">
+
+						<div class="row">
+							<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-sm-offset-2">
+							
+								<p class='input-label' style="text-align:center;">Policy Number:</p>
+						  	</div>
+						  	<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 ">
+						  		<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+						  	</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 ">
+						  		<div class="button submit-button">Submit</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane" id="Beneficiary">
+
+						<div class="row table-row">
+							<div class="col-xs-10 col-sm-offset-1 table-container">
+							
+								<div class="row full-width-row header-row">
+									<div class="col-xs-4 cell">
+									Policy Number
+									</div>
+									<div class="col-xs-4 cell">
+									New Beneficiary Details
+									</div>
+									<div class="col-xs-4 cell">
+									Actions
+									</div>
+								</div>
+
+								<div class="row full-width-row table-row">
+									<div class="col-xs-4 cell">
+									34734896529
+									</div>
+									<div class="col-xs-4 cell">
+									Johnny (A123456(7))
+									</div>
+									<div class="col-xs-4 cell">
+										<div class="button-container">
+											<div class="button" style="float:left">Approve</div>
+											<div class="button" style="float:right">Decline</div>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+
+				<div class="tab-pane" id="Payment">
+
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-sm-offset-3">
+						
+							<p class='input-label'>Policy Number:</p>
+					  	</div>
+					  	<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 ">
+					  		<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+					  	</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-sm-offset-3">
+						
+							<p class='input-label'>Amount:</p>
+					  	</div>
+					  	<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 ">
+					  		<input type="text" class="form-control" placeholder="">
+					  	</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-sm-offset-3">
+						
+							<p class='input-label'>Date:</p>
+					  	</div>
+					  	<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 ">
+					  		<input class="datepicker" data-date-format="mm/dd/yyyy">
+					  	</div>
+					</div>
+
+					<div class="row">
+					<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 col-sm-offset-7">
+					  		<div class="button submit-button" style="float:right;">Submit</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane" id="Claim">
+
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-sm-offset-3">
+						
+							<p class='input-label'>Policy Number:</p>
+					  	</div>
+					  	<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 ">
+					  		<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+					  	</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-sm-offset-3">
+						
+							<p class='input-label'>Key 1:</p>
+					  	</div>
+					  	<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 ">
+					  		<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+					  	</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-sm-offset-3">
+						
+							<p class='input-label'>Key 2:</p>
+					  	</div>
+					  	<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 ">
+					  		<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+					  	</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-sm-offset-3">
+						
+							<p class='input-label'>Key 3:</p>
+					  	</div>
+					  	<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 ">
+					  		<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+					  	</div>
+					</div>
+
+					<div class="row">
+					<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 col-sm-offset-7">
+					  		<div class="button submit-button" style="float:right;">Submit</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script>
+		$('.datepicker').datepicker({
+		    startDate: '-3d',
+		    todayHighlight : true
+		});
+		$('.datepicker').datepicker('update', new Date());
+		</script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	</body>
+</html>
